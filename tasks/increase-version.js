@@ -11,12 +11,13 @@
 module.exports = function(grunt) {
 
   grunt.getNextVersion = function(current, options) {
+    options = options || {};
     var validIncrements = ['major', 'minor', 'patch'];
     var increment = grunt.option('increment') || options.defaultIncrement;
     var betaIncrement = !!grunt.option('beta-increment');
 
     if(!increment && !betaIncrement ||
-        (increment && validIncrements.indexOf(increment) == -1)) {
+        (increment && validIncrements.indexOf(increment) === -1)) {
       return false;
     }
 
