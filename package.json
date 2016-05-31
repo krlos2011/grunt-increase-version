@@ -1,12 +1,16 @@
 {
     "name": "grunt-increase-version",
     "description": "Increases package and bower version",
-    "version": "0.1.2",
+    "version": "0.2.1",
     "homepage": "https://github.com/jstools/grunt-increase-version",
     "author": {
         "name": "Jesús Germade",
         "email": "jesus@germade.es",
         "url": "http://jesus.germade.es/"
+    },
+    "contributors": {
+        "name": "Ángel Brasero",
+        "url": "http://makmonty.com"
     },
     "repository": {
         "type": "git",

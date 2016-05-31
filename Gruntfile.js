@@ -30,11 +30,12 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     'increase-version': {
-      bower: {
-        options: {
-        },
+      options: {
+        defaultIncrement: 'patch'
+      },
+      package: {
         files: {
-          src: [ 'bower.json', '.bower.json' ]
+          src: [ 'package.json' ]
         }
       }
     },
