@@ -79,7 +79,7 @@ module.exports = function(grunt) {
       } else {
         var data = grunt.file.readJSON(filepath);
         data.version = version;
-        grunt.file.write( filepath, JSON.stringify(data, null, 4) );
+        grunt.file.write( filepath, JSON.stringify(data, null, 4) + '\n' );
       }
     }
 
